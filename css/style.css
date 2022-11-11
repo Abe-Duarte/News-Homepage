@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.google.com/specimen/Inter');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@700&display=swap');
 
 /* CSS Reset */
 
@@ -18,4 +18,29 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #000;
+    background-color:  hsl(36, 100%, 99%);
+}
+
+/* Header And Navigation Bar */
+
+li, a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
