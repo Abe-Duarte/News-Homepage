@@ -15,7 +15,8 @@ The objetive of this project is to serve as a practice of my HTML and CSS abilit
 
 ### Screenshot
 <b>Desktop View: 1360px</b>
-![](./screenshots/1360px-width.png)
+![](./screenshots/1360px-width-01.png)
+![](./screenshots/1360px-width-02.png)
 
 ### Links
 - Live Site URL: [GitHub Pages](https://abe-duarte.github.io/News-Homepage/)
