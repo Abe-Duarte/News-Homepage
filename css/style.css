@@ -1,7 +1,8 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;700;800&display=swap');
-
+@import url('../assets/fonts/static/Inter-Bold.ttf');
+@import url('../assets/fonts/static/Inter-ExtraBold.ttf');
+@import url('../assets/fonts/static/Inter-Regular.ttf');
 html {
     width: 100%;
     height: auto;
@@ -31,12 +32,10 @@ header {
     width: 100%;
 }
 
-.header > h2 {
-    color: rgb(17, 17, 17);
-    font-family: 'Abril Fatface', serif;
-    font-size: 40px;
+header > .header > img {
+    width: 4rem;
     align-self: center;
-    margin-top: 0.5rem;
+    padding: 1rem 0 0 0;
     margin-left: 2rem;
 }
 
@@ -44,7 +43,6 @@ nav.navbar {
     display: flex;
     width: 40%;
     justify-content: space-between;
-    margin-top: 1rem;
     margin-right: 2rem;
 }
 
@@ -52,6 +50,14 @@ nav.navbar {
     color: hsl(236, 13%, 42%);
     font-weight: 400;
     align-self: center;
+    text-transform: capitalize
+}
+
+.li-items > a:hover {
+    font-weight: 700;
+    color:rgb(17, 17, 17);
+    text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .image > img {
@@ -74,15 +80,16 @@ nav.navbar {
 
 .text {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     margin: 1rem;
+    text-align: justify;
     gap: 2rem;
 }
 
 .title > p {
     font-family: 'Inter', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     color:rgb(0, 0, 0);
     text-align: left;
     font-size: 3.2rem;
@@ -102,15 +109,20 @@ nav.navbar {
     margin-top: 2rem;
     color: hsl(36, 100%, 99%);
     font-variant: small-caps;
-    font-weight: bolder;
+    font-weight: 700;
     background-color: hsl(5, 85%, 63%);
     width: 60%;
     height: 3rem;
-    font-size: 18px;
+    font-size: 1.3rem;
     border: none;
     text-overflow: ellipsis;
     letter-spacing: 0.3rem;
     pointer-events: auto;
+}
+
+.paragraph > button:hover {
+    font-size: 1.5rem;
+    transition: 0.2s;
 }
 
 .trending-topics {
@@ -131,7 +143,8 @@ nav.navbar {
 
 .box-1 > h2, .box-2 > h2, .box-3 > h2 {
     color:hsl(36, 100%, 99%);
-    font-size: 1.3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
     padding: 1rem 1rem;
     text-transform: capitalize;
 }
@@ -139,10 +152,10 @@ nav.navbar {
 
 .trending-topics > .aside-title > h2 {
     color: hsl(35, 77%, 62%);
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     padding: 1rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .trending-topics > .line-separation {
@@ -157,7 +170,7 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 30vh;
+    height: auto;
     margin: 3rem 0 50px;
     padding: 1rem;
 }
@@ -172,13 +185,15 @@ nav.navbar {
     font-size: 2rem;
     grid-area: number;
     align-self: start;
+    font-weight: 700;
     color:hsl(233, 8%, 79%);
     font-family: 'Inter', sans-serif;
 }
 
 .secondary > .slice-1 > h3, .slice-2 > h3, .slice-3 > h3 {
     font-size: 1rem;
-    align-self: end;
+    font-weight: 700;
+    align-self: center;
     color:rgb(0, 0, 0);
     grid-area: title;
 }
@@ -196,7 +211,7 @@ nav.navbar {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 1fr 1fr 40%;
-    width: 30%;
+    width: 25%;
     grid-template-areas: 
     "image number"
     "image title"
@@ -213,13 +228,18 @@ footer {
 }
 
 footer > p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color:rgb(17, 17, 17);
     align-self: center;
 }
 
-footer > a {
-    text-decoration: none;
-    font-size: 3rem;
-    color:rgb(0, 0, 0);
+footer > p > a {
+    color:rgb(17, 17, 17);
+    font-weight: bold;
+    align-self: center;
+}
+
+footer > p > a > svg {
+    width: 1.5rem;
+    align-self: center;
 }
